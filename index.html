@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página y de la vista previa (WhatsApp) -->
+    <title>Mi Agenda (v.01)</title>
+    <meta property="og:title" content="Mis Proyectos (v.01)" />
+    <!-- Descripción corta y atractiva -->
+    <meta property="og:description" content="Proyectos de negocios UCLA-DCyT." />
+    <!-- Imagen que se muestra en WhatsApp (logo o imagen destacada, 800x418 px recomendado) -->
+    <meta property="og:image" content="https://demo-agenda-v01.vercel.app/resources/logo.jpg" />
+    <!-- URL del proyecto -->
+    <meta property="og:url" content="https://demo-agenda-v01.vercel.app" />
+    <!-- Tipo de contenido -->
+    <meta property="og:type" content="website" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./resources/favicon.png">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css?v251103-1750" />
+</head>
+
+<body>
+    <h3 style="width: 320px;">PROYECTOS DE NEGOCIOS v.01</h3>
+    <section id="negocios">
+        <div>
+            <button id="negocios_btAgregarGrupo">Agregar Grupo</button>
+        </div>
+    </section>
+    <section style="font-size: 10px;">
+        <h3>GRUPOS REGISTRADOS</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 150px;">Grupo</th>
+                    <th style="width: 80px;">Cédula 1</th>
+                    <th style="width: 80px;">Cédula 2</th>
+                    <th style="width: 80px;">Cédula 3</th>
+                </tr>
+            </thead>
+            <tbody id="negocios_divGruposRegistrados"> </tbody>
+        </table>
+    </section>
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index()
+    </script>
+</body>
+
+</html>
