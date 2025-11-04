@@ -51,11 +51,11 @@ export default class Cl_mGrupo {
   }
   error(): string | false {
     if (
-      this._cedula1 === this._cedula2 ||
-      (this._cedula3 !== null && this._cedula1 === this._cedula3) ||
-      (this._cedula3 !== null && this._cedula2 === this._cedula3)
+      this.cedula1 === this.cedula2 ||
+      (this.cedula3 !== null && this.cedula1 === this.cedula3) ||
+      (this.cedula3 !== null && this.cedula2 === this.cedula3)
     )
-      return `El grupo ${this._nombre} tiene cedula repetida`;
+      return `El grupo ${this.nombre} tiene cedula repetida`;
     return false;
   }
   existeCedula(cedula: number | null): boolean {
